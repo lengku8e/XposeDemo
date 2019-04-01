@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="20.0sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="URI: " />
+            <EditText android:id="@id/uri_edit" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/url" />
+        </LinearLayout>
+        <Button android:layout_gravity="center" android:id="@id/submit" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="20.0dip" android:text="submit" />
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="注：点击submit按钮5秒后将发送uri，此期间可调整地图处于前台或后台" />
+        <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <Button android:id="@id/register" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="register" />
+            <Button android:id="@id/unregister" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="unregister" />
+        </LinearLayout>
+        <TextView android:textSize="20.0sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Result Record: " />
+        <TextView android:textSize="20.0sp" android:id="@id/content" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </LinearLayout>
+</ScrollView>
